@@ -1,0 +1,1010 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.yummynoodlebar.config.WebDomainIntegrationTest" tests="1" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="dinesh" time="1.405332977042E9">
+  <properties/>
+  <testcase name="getHome" classname="com.yummynoodlebar.config.WebDomainIntegrationTest" time="5.674"/>
+  <system-out><![CDATA[2014-07-14 15:46:11 DEBUG SpringJUnit4ClassRunner:106 - SpringJUnit4ClassRunner constructor called with [class com.yummynoodlebar.config.WebDomainIntegrationTest].
+2014-07-14 15:46:11 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to AnnotationConfigWebContextLoader to process context configuration [ContextConfigurationAttributes@1237e3f declaringClass = 'com.yummynoodlebar.config.WebDomainIntegrationTest', locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2014-07-14 15:46:11 DEBUG ContextLoaderUtils:471 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG TestContextManager:184 - @TestExecutionListeners is not present for class [class com.yummynoodlebar.config.WebDomainIntegrationTest]: using defaults.
+2014-07-14 15:46:11 DEBUG TestContextManager:226 - Could not instantiate default TestExecutionListener class [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes available.
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.yummynoodlebar.config.WebDomainIntegrationTest]
+2014-07-14 15:46:11 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to AnnotationConfigWebContextLoader to load context from [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]].
+2014-07-14 15:46:11 DEBUG AbstractGenericWebContextLoader:112 - Loading WebApplicationContext for merged context configuration [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]].
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:11 DEBUG AnnotationConfigWebContextLoader:167 - Registering annotated classes: {class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}
+2014-07-14 15:46:11 INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1265f3d: startup date [Mon Jul 14 15:46:11 IST 2014]; root of context hierarchy
+2014-07-14 15:46:11 DEBUG StandardServletEnvironment:172 - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2014-07-14 15:46:11 DEBUG GenericWebApplicationContext:540 - Bean factory for org.springframework.web.context.support.GenericWebApplicationContext@1265f3d: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c64183: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,persistenceConfig,coreConfig,webConfig]; root of factory hierarchy
+2014-07-14 15:46:12 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-07-14 15:46:12 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-07-14 15:46:12 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2014-07-14 15:46:12 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-07-14 15:46:12 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2014-07-14 15:46:12 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:12 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:12 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-07-14 15:46:12 DEBUG PathMatchingResourcePatternResolver:550 - Looking for matching resources in directory tree [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller]
+2014-07-14 15:46:12 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller] for files matching pattern [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller/**/*.class]
+2014-07-14 15:46:12 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller/fixture] for files matching pattern [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller/**/*.class]
+2014-07-14 15:46:12 DEBUG PathMatchingResourcePatternResolver:550 - Looking for matching resources in directory tree [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller]
+2014-07-14 15:46:12 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller] for files matching pattern [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller/**/*.class]
+2014-07-14 15:46:12 DEBUG PathMatchingResourcePatternResolver:351 - Resolved location pattern [classpath*:com/yummynoodlebar/web/controller/**/*.class] to resources [file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller/SiteIntegrationTest.class], file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller/fixture/WebDataFixture.class], file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller/BasketCommandIntegrationTest.class], file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/test/com/yummynoodlebar/web/controller/BasketQueryIntegrationTest.class], file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller/BasketQueryController.class], file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller/BasketCommandController.class], file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller/SiteController.class]]
+2014-07-14 15:46:13 DEBUG ClassPathBeanDefinitionScanner:273 - Identified candidate component class: file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller/BasketQueryController.class]
+2014-07-14 15:46:13 DEBUG ClassPathBeanDefinitionScanner:273 - Identified candidate component class: file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller/BasketCommandController.class]
+2014-07-14 15:46:13 DEBUG ClassPathBeanDefinitionScanner:273 - Identified candidate component class: file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/controller/SiteController.class]
+2014-07-14 15:46:13 DEBUG PathMatchingResourcePatternResolver:550 - Looking for matching resources in directory tree [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/domain]
+2014-07-14 15:46:13 DEBUG PathMatchingResourcePatternResolver:612 - Searching directory [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/domain] for files matching pattern [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/domain/**/*.class]
+2014-07-14 15:46:13 DEBUG PathMatchingResourcePatternResolver:351 - Resolved location pattern [classpath*:com/yummynoodlebar/web/domain/**/*.class] to resources [file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/domain/MenuItem.class], file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/domain/Basket.class]]
+2014-07-14 15:46:13 DEBUG ClassPathBeanDefinitionScanner:273 - Identified candidate component class: file [/home/dinesh/STS_CODE/tut-web-4-complete/build/classes/main/com/yummynoodlebar/web/domain/Basket.class]
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method com.yummynoodlebar.config.PersistenceConfig.menuPersistenceService()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method com.yummynoodlebar.config.PersistenceConfig.menuItemRepository()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method com.yummynoodlebar.config.CoreConfig.menuService()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:142 - Registered bean definition for imported @Configuration class org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.requestMappingHandlerAdapter()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.handlerExceptionResolver()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.requestMappingHandlerMapping()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcContentNegotiationManager()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcConversionService()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.defaultServletHandlerMapping()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.httpRequestHandlerAdapter()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.simpleControllerHandlerAdapter()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.mvcValidator()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.viewControllerHandlerMapping()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.beanNameHandlerMapping()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.resourceHandlerMapping()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method com.yummynoodlebar.config.WebConfig.templateResolver()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method com.yummynoodlebar.config.WebConfig.viewResolver()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method com.yummynoodlebar.config.WebConfig.messageSource()
+2014-07-14 15:46:13 DEBUG ConfigurationClassBeanDefinitionReader:262 - Registering bean definition for @Bean method com.yummynoodlebar.config.WebConfig.localeResolver()
+2014-07-14 15:46:13 DEBUG ConfigurationClassEnhancer:94 - Successfully enhanced com.yummynoodlebar.config.PersistenceConfig; enhanced class name is: com.yummynoodlebar.config.PersistenceConfig$$EnhancerByCGLIB$$591fd76e
+2014-07-14 15:46:13 DEBUG ConfigurationClassPostProcessor:359 - Replacing bean definition 'persistenceConfig' existing class name 'com.yummynoodlebar.config.PersistenceConfig' with enhanced class name 'com.yummynoodlebar.config.PersistenceConfig$$EnhancerByCGLIB$$591fd76e'
+2014-07-14 15:46:13 DEBUG ConfigurationClassEnhancer:94 - Successfully enhanced com.yummynoodlebar.config.CoreConfig; enhanced class name is: com.yummynoodlebar.config.CoreConfig$$EnhancerByCGLIB$$3e411412
+2014-07-14 15:46:13 DEBUG ConfigurationClassPostProcessor:359 - Replacing bean definition 'coreConfig' existing class name 'com.yummynoodlebar.config.CoreConfig' with enhanced class name 'com.yummynoodlebar.config.CoreConfig$$EnhancerByCGLIB$$3e411412'
+2014-07-14 15:46:13 DEBUG ConfigurationClassEnhancer:94 - Successfully enhanced com.yummynoodlebar.config.WebConfig; enhanced class name is: com.yummynoodlebar.config.WebConfig$$EnhancerByCGLIB$$8a5d2163
+2014-07-14 15:46:13 DEBUG ConfigurationClassPostProcessor:359 - Replacing bean definition 'webConfig' existing class name 'com.yummynoodlebar.config.WebConfig' with enhanced class name 'com.yummynoodlebar.config.WebConfig$$EnhancerByCGLIB$$8a5d2163'
+2014-07-14 15:46:13 DEBUG ConfigurationClassEnhancer:94 - Successfully enhanced org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; enhanced class name is: org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerByCGLIB$$d898f350
+2014-07-14 15:46:13 DEBUG ConfigurationClassPostProcessor:359 - Replacing bean definition 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' existing class name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' with enhanced class name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerByCGLIB$$d898f350'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'messageSource'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'messageSource'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'webConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'webConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'webConfig' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'webConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'messageSource' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'messageSource'
+2014-07-14 15:46:13 DEBUG GenericWebApplicationContext:797 - Using MessageSource [org.springframework.context.support.ReloadableResourceBundleMessageSource: basenames=[classpath:messages/messages,classpath:messages/validation]]
+2014-07-14 15:46:13 DEBUG GenericWebApplicationContext:831 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@b1371c]
+2014-07-14 15:46:13 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@26941c]
+2014-07-14 15:46:13 INFO  DefaultListableBeanFactory:596 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c64183: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,persistenceConfig,coreConfig,webConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,basketQueryController,basketCommandController,siteController,scopedTarget.basket,basket,menuPersistenceService,menuItemRepository,menuService,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerAdapter,handlerExceptionResolver,requestMappingHandlerMapping,mvcContentNegotiationManager,mvcConversionService,defaultServletHandlerMapping,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,mvcValidator,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,templateResolver,viewResolver,messageSource,localeResolver]; root of factory hierarchy
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'persistenceConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'persistenceConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'persistenceConfig' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'persistenceConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'coreConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'coreConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'coreConfig' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'coreConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'webConfig'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'basketQueryController'
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'basketQueryController'
+2014-07-14 15:46:13 DEBUG InjectionMetadata:71 - Registered injected element on class [com.yummynoodlebar.web.controller.BasketQueryController]: AutowiredFieldElement for private com.yummynoodlebar.web.domain.Basket com.yummynoodlebar.web.controller.BasketQueryController.basket
+2014-07-14 15:46:13 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'basketQueryController' to allow for resolving potential circular references
+2014-07-14 15:46:13 DEBUG InjectionMetadata:85 - Processing injected method of bean 'basketQueryController': AutowiredFieldElement for private com.yummynoodlebar.web.domain.Basket com.yummynoodlebar.web.controller.BasketQueryController.basket
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'basket'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'basket'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'basket' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG CglibAopProxy:155 - Creating CGLIB proxy: target source is SimpleBeanTargetSource for target bean 'scopedTarget.basket' of type [com.yummynoodlebar.web.domain.Basket]
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public com.yummynoodlebar.web.domain.MenuItem com.yummynoodlebar.web.domain.Basket.add(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public int com.yummynoodlebar.web.domain.Basket.getSize()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public void com.yummynoodlebar.web.domain.Basket.delete(java.lang.String)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public com.yummynoodlebar.web.domain.MenuItem com.yummynoodlebar.web.domain.Basket.findById(java.lang.String)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public java.util.List com.yummynoodlebar.web.domain.Basket.findAll()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public java.util.List com.yummynoodlebar.web.domain.Basket.getItems()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:759 - Found finalize() method - using NO_OVERRIDE
+2014-07-14 15:46:14 DEBUG CglibAopProxy:771 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:776 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public abstract java.lang.Object org.springframework.aop.scope.ScopedObject.getTargetObject()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:808 - Unable to apply any optimisations to advised method: public abstract void org.springframework.aop.scope.ScopedObject.removeFromScope()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+2014-07-14 15:46:14 DEBUG CglibAopProxy:765 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'basket'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'basket'
+2014-07-14 15:46:14 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'basketQueryController' to bean named 'basket'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'basketQueryController'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'basketCommandController'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'basketCommandController'
+2014-07-14 15:46:14 DEBUG InjectionMetadata:71 - Registered injected element on class [com.yummynoodlebar.web.controller.BasketCommandController]: AutowiredFieldElement for private com.yummynoodlebar.web.domain.Basket com.yummynoodlebar.web.controller.BasketCommandController.basket
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'basketCommandController' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG InjectionMetadata:85 - Processing injected method of bean 'basketCommandController': AutowiredFieldElement for private com.yummynoodlebar.web.domain.Basket com.yummynoodlebar.web.controller.BasketCommandController.basket
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'basket'
+2014-07-14 15:46:14 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'basketCommandController' to bean named 'basket'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'basketCommandController'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'siteController'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'siteController'
+2014-07-14 15:46:14 DEBUG InjectionMetadata:71 - Registered injected element on class [com.yummynoodlebar.web.controller.SiteController]: AutowiredFieldElement for private com.yummynoodlebar.core.services.MenuService com.yummynoodlebar.web.controller.SiteController.menuService
+2014-07-14 15:46:14 DEBUG InjectionMetadata:71 - Registered injected element on class [com.yummynoodlebar.web.controller.SiteController]: AutowiredFieldElement for private com.yummynoodlebar.web.domain.Basket com.yummynoodlebar.web.controller.SiteController.basket
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'siteController' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG InjectionMetadata:85 - Processing injected method of bean 'siteController': AutowiredFieldElement for private com.yummynoodlebar.core.services.MenuService com.yummynoodlebar.web.controller.SiteController.menuService
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'menuService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'menuService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'coreConfig'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'menuPersistenceService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'menuPersistenceService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'persistenceConfig'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'menuItemRepository'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'menuItemRepository'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'persistenceConfig'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'menuItemRepository' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'menuItemRepository'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:739 - Autowiring by type from bean name 'menuPersistenceService' via factory method to bean named 'menuItemRepository'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'menuPersistenceService' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'menuPersistenceService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:739 - Autowiring by type from bean name 'menuService' via factory method to bean named 'menuPersistenceService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'menuService' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'menuService'
+2014-07-14 15:46:14 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'siteController' to bean named 'menuService'
+2014-07-14 15:46:14 DEBUG InjectionMetadata:85 - Processing injected method of bean 'siteController': AutowiredFieldElement for private com.yummynoodlebar.web.domain.Basket com.yummynoodlebar.web.controller.SiteController.basket
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'basket'
+2014-07-14 15:46:14 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'siteController' to bean named 'basket'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'siteController'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'basket'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'menuPersistenceService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'menuItemRepository'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'menuService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG InjectionMetadata:71 - Registered injected element on class [org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerByCGLIB$$d898f350]: AutowiredMethodElement for public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List)
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG InjectionMetadata:85 - Processing injected method of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': AutowiredMethodElement for public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List)
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'webConfig'
+2014-07-14 15:46:14 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' to bean named 'webConfig'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'requestMappingHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'mvcContentNegotiationManager'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'mvcContentNegotiationManager'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'mvcConversionService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'mvcConversionService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'mvcConversionService' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'mvcConversionService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'mvcValidator'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'mvcValidator'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'mvcValidator' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'mvcValidator'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'requestMappingHandlerAdapter' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:1525 - Invoking afterPropertiesSet() on bean with name 'requestMappingHandlerAdapter'
+2014-07-14 15:46:14 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: org.springframework.web.context.support.GenericWebApplicationContext@1265f3d: startup date [Mon Jul 14 15:46:11 IST 2014]; root of context hierarchy
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'requestMappingHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'handlerExceptionResolver'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'handlerExceptionResolver'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2014-07-14 15:46:14 DEBUG ExceptionHandlerExceptionResolver:284 - Looking for exception mappings: org.springframework.web.context.support.GenericWebApplicationContext@1265f3d: startup date [Mon Jul 14 15:46:11 IST 2014]; root of context hierarchy
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'handlerExceptionResolver' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'handlerExceptionResolver'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'requestMappingHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcConversionService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'requestMappingHandlerMapping' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:1525 - Invoking afterPropertiesSet() on bean with name 'requestMappingHandlerMapping'
+2014-07-14 15:46:14 DEBUG RequestMappingHandlerMapping:99 - Looking for request mappings in application context: org.springframework.web.context.support.GenericWebApplicationContext@1265f3d: startup date [Mon Jul 14 15:46:11 IST 2014]; root of context hierarchy
+2014-07-14 15:46:14 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/showBasket],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketQueryController.show(org.springframework.ui.Model)
+2014-07-14 15:46:14 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/addToBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:14 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/removeFromBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:14 INFO  RequestMappingHandlerMapping:179 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'requestMappingHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcConversionService'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'defaultServletHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'defaultServletHandlerMapping' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'defaultServletHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'httpRequestHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'httpRequestHandlerAdapter' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'httpRequestHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'simpleControllerHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'simpleControllerHandlerAdapter' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'simpleControllerHandlerAdapter'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'mvcValidator'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'viewControllerHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'viewControllerHandlerMapping' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'viewControllerHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'beanNameHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'beanNameHandlerMapping' to allow for resolving potential circular references
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:71 - Looking for URL mappings in application context: org.springframework.web.context.support.GenericWebApplicationContext@1265f3d: startup date [Mon Jul 14 15:46:11 IST 2014]; root of context hierarchy
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'persistenceConfig': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'coreConfig': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'webConfig': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'basketQueryController': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'basketCommandController': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'siteController': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'scopedTarget.basket': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'basket': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'menuPersistenceService': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'menuItemRepository': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'menuService': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcConversionService': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcValidator': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'templateResolver': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'viewResolver': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'localeResolver': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'environment': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'servletContext': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'contextParameters': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'contextAttributes': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2014-07-14 15:46:14 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'beanNameHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'resourceHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'resourceHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'resourceHandlerMapping' to allow for resolving potential circular references
+2014-07-14 15:46:14 INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'resourceHandlerMapping'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'templateResolver'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'templateResolver'
+2014-07-14 15:46:14 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'webConfig'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'templateResolver' to allow for resolving potential circular references
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'templateResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'viewResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'viewResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'webConfig'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'templateResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'viewResolver' to allow for resolving potential circular references
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'viewResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'messageSource'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'localeResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'localeResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'webConfig'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'localeResolver' to allow for resolving potential circular references
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'localeResolver'
+2014-07-14 15:46:15 DEBUG GenericWebApplicationContext:858 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@16040a9]
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2014-07-14 15:46:15 DEBUG PropertySourcesPropertyResolver:72 - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+2014-07-14 15:46:15 DEBUG PropertySourcesPropertyResolver:72 - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+2014-07-14 15:46:15 DEBUG PropertySourcesPropertyResolver:72 - Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+2014-07-14 15:46:15 DEBUG JndiTemplate:150 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2014-07-14 15:46:15 DEBUG JndiLocatorDelegate:101 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+2014-07-14 15:46:15 DEBUG JndiTemplate:150 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2014-07-14 15:46:15 DEBUG JndiPropertySource:87 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial. Returning null.
+2014-07-14 15:46:15 DEBUG PropertySourcesPropertyResolver:72 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2014-07-14 15:46:15 DEBUG PropertySourcesPropertyResolver:72 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2014-07-14 15:46:15 DEBUG PropertySourcesPropertyResolver:94 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2014-07-14 15:46:15 DEBUG CacheAwareContextLoaderDelegate:93 - Storing ApplicationContext in cache under key [[WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]].
+2014-07-14 15:46:15 DEBUG ServletTestExecutionListener:117 - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [TestContext@7e4b2b testClass = WebDomainIntegrationTest, testInstance = com.yummynoodlebar.config.WebDomainIntegrationTest@178f96e, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]].
+2014-07-14 15:46:15 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@7e4b2b testClass = WebDomainIntegrationTest, testInstance = com.yummynoodlebar.config.WebDomainIntegrationTest@178f96e, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]].
+2014-07-14 15:46:15 DEBUG CacheAwareContextLoaderDelegate:104 - Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]].
+2014-07-14 15:46:15 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.yummynoodlebar.config.WebDomainIntegrationTest': AutowiredFieldElement for org.springframework.web.context.WebApplicationContext com.yummynoodlebar.config.WebDomainIntegrationTest.webApplicationContext
+2014-07-14 15:46:15 DEBUG AutowiredAnnotationBeanPostProcessor:433 - Autowiring by type from bean name 'com.yummynoodlebar.config.WebDomainIntegrationTest' to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@1265f3d'
+2014-07-14 15:46:15 DEBUG CacheAwareContextLoaderDelegate:104 - Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]].
+2014-07-14 15:46:15 DEBUG ServletTestExecutionListener:117 - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [TestContext@7e4b2b testClass = WebDomainIntegrationTest, testInstance = com.yummynoodlebar.config.WebDomainIntegrationTest@178f96e, testMethod = getHome@WebDomainIntegrationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]].
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2014-07-14 15:46:15 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:15 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:15 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:15 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:15 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:15 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:15 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:15 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-07-14 15:46:15 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'localeResolver'
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:482 - Using LocaleResolver [org.springframework.web.servlet.i18n.CookieLocaleResolver@134c8b]
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:511 - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@1254a1f]
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'beanNameHandlerMapping'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'resourceHandlerMapping'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'handlerExceptionResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:649 - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@108ed3b]
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'viewResolver'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:711 - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@1d02427]
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:533 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2014-07-14 15:46:15 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 32 ms
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:823 - DispatcherServlet with name '' processing GET request for [/]
+2014-07-14 15:46:15 DEBUG RequestMappingHandlerMapping:220 - Looking up handler method for path /
+2014-07-14 15:46:15 DEBUG RequestMappingHandlerMapping:227 - Returning handler method [public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)]
+2014-07-14 15:46:15 DEBUG DefaultListableBeanFactory:246 - Returning cached instance of singleton bean 'siteController'
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:912 - Last-Modified value for [/] is: -1
+2014-07-14 15:46:15 DEBUG SiteController:38 - Yummy MenuItemDetails to home view
+2014-07-14 15:46:15 DEBUG TestDispatcherServlet:1206 - Rendering view [org.thymeleaf.spring3.view.ThymeleafView@1a03ae8] in DispatcherServlet with name ''
+2014-07-14 15:46:15 INFO  TemplateEngine:830 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2014-07-14 15:46:16 INFO  AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.ServletContextTemplateResolver
+2014-07-14 15:46:16 INFO  AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2014-07-14 15:46:16 INFO  AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+2014-07-14 15:46:16 INFO  AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2014-07-14 15:46:16 DEBUG TEMPLATE_CACHE:119 - [THYMELEAF][CACHE_INITIALIZE] Initializing cache TEMPLATE_CACHE. Max size: 50. Soft references are used.
+2014-07-14 15:46:16 DEBUG FRAGMENT_CACHE:119 - [THYMELEAF][CACHE_INITIALIZE] Initializing cache FRAGMENT_CACHE. Max size: 300. Soft references are used.
+2014-07-14 15:46:16 DEBUG CONFIG:128 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.ServletContextTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.spring3.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF]     * Lenient: false
+[THYMELEAF]     * Processors matching nodes by element attribute [precedence]:
+[THYMELEAF]         * "th:abbr" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:accept" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:accept-charset" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:accesskey" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:action" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleNonRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:align" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:alt" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:alt-title" [990]: org.thymeleaf.standard.processor.attr.StandardAltTitleAttrProcessor
+[THYMELEAF]         * "th:archive" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:async" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:attr" [700]: org.thymeleaf.standard.processor.attr.StandardAttrAttrProcessor
+[THYMELEAF]         * "th:attrappend" [900]: org.thymeleaf.standard.processor.attr.StandardAttrappendAttrProcessor
+[THYMELEAF]         * "th:attrprepend" [800]: org.thymeleaf.standard.processor.attr.StandardAttrprependAttrProcessor
+[THYMELEAF]         * "th:audio" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:autocomplete" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:autofocus" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:autoplay" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:axis" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:background" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:bgcolor" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:border" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:case" [275]: org.thymeleaf.standard.processor.attr.StandardCaseAttrProcessor
+[THYMELEAF]         * "th:cellpadding" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:cellspacing" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:challenge" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:charset" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:checked" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:cite" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:class" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:classappend" [1100]: org.thymeleaf.standard.processor.attr.StandardClassappendAttrProcessor
+[THYMELEAF]         * "th:classid" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:codebase" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:codetype" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:cols" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:colspan" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:compact" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:content" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:contenteditable" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:contextmenu" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:controls" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:data" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:datetime" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:declare" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:default" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:defer" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:dir" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:disabled" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:draggable" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:dropzone" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:each" [200]: org.thymeleaf.standard.processor.attr.StandardEachAttrProcessor
+[THYMELEAF]         * "th:enctype" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:errors" [1200]: org.thymeleaf.spring3.processor.attr.SpringErrorsAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringOptionFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputRadioFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringTextareaFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputPasswordFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputCheckboxFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringSelectFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputFileFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:field" [1200]: org.thymeleaf.spring3.processor.attr.SpringInputGeneralFieldAttrProcessor
+[THYMELEAF]         * "th:for" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:form" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:formaction" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:formenctype" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:formmethod" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:formnovalidate" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:formtarget" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:fragment" [1500]: org.thymeleaf.standard.processor.attr.StandardFragmentAttrProcessor
+[THYMELEAF]         * "th:frame" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:frameborder" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:headers" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:height" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:hidden" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:high" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:href" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleNonRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:hreflang" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:hspace" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:http-equiv" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:icon" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:id" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:if" [300]: org.thymeleaf.standard.processor.attr.StandardIfAttrProcessor
+[THYMELEAF]         * "th:include" [100]: org.thymeleaf.standard.processor.attr.StandardIncludeFragmentAttrProcessor
+[THYMELEAF]         * "th:inline" [1000]: org.thymeleaf.standard.processor.attr.StandardInlineAttrProcessor
+[THYMELEAF]         * "th:ismap" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:keytype" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:kind" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:label" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:lang" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:lang-xmllang" [990]: org.thymeleaf.standard.processor.attr.StandardLangXmlLangAttrProcessor
+[THYMELEAF]         * "th:list" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:longdesc" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:loop" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:low" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:manifest" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:marginheight" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:marginwidth" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:max" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:maxlength" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:media" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:method" [1000]: org.thymeleaf.spring3.processor.attr.SpringMethodAttrProcessor
+[THYMELEAF]         * "th:min" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:multiple" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:name" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleNonRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:novalidate" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:nowrap" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:object" [500]: org.thymeleaf.spring3.processor.attr.SpringObjectAttrProcessor
+[THYMELEAF]         * "th:onabort" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onafterprint" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onbeforeprint" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onbeforeunload" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onblur" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:oncanplay" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:oncanplaythrough" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onchange" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onclick" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:oncontextmenu" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondblclick" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondrag" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondragend" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondragenter" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondragleave" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondragover" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondragstart" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondrop" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ondurationchange" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onemptied" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onended" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onerror" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onfocus" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onformchange" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onforminput" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onhashchange" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:oninput" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:oninvalid" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onkeydown" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onkeypress" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onkeyup" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onload" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onloadeddata" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onloadedmetadata" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onloadstart" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onmessage" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onmousedown" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onmousemove" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onmouseout" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onmouseover" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onmouseup" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onmousewheel" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onoffline" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ononline" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onpause" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onplay" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onplaying" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onpopstate" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onprogress" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onratechange" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onreadystatechange" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onredo" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onreset" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onresize" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onscroll" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onseeked" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onseeking" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onselect" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onshow" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onstalled" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onstorage" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onsubmit" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onsuspend" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:ontimeupdate" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onundo" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onunload" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onvolumechange" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:onwaiting" [1000]: org.thymeleaf.standard.processor.attr.StandardDOMEventAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:open" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:optimum" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:pattern" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:placeholder" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:poster" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:preload" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:pubdate" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:radiogroup" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:readonly" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:rel" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:remove" [1600]: org.thymeleaf.standard.processor.attr.StandardRemoveAttrProcessor
+[THYMELEAF]         * "th:replace" [100]: org.thymeleaf.standard.processor.attr.StandardReplaceFragmentAttrProcessor
+[THYMELEAF]         * "th:required" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:rev" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:reversed" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:rows" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:rowspan" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:rules" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:sandbox" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:scheme" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:scope" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:scoped" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:scrolling" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:seamless" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:selected" [1000]: org.thymeleaf.standard.processor.attr.StandardConditionalFixedValueAttrProcessor
+[THYMELEAF]         * "th:size" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:sizes" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:span" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:spellcheck" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:src" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleNonRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:srclang" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:standby" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:start" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:step" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:style" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:substituteby" [100]: org.thymeleaf.standard.processor.attr.StandardSubstituteByFragmentAttrProcessor
+[THYMELEAF]         * "th:summary" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:switch" [250]: org.thymeleaf.standard.processor.attr.StandardSwitchAttrProcessor
+[THYMELEAF]         * "th:tabindex" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:target" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:text" [1300]: org.thymeleaf.standard.processor.attr.StandardTextAttrProcessor
+[THYMELEAF]         * "th:title" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:type" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleNonRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:unless" [400]: org.thymeleaf.standard.processor.attr.StandardUnlessAttrProcessor
+[THYMELEAF]         * "th:usemap" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:utext" [1400]: org.thymeleaf.standard.processor.attr.StandardUtextAttrProcessor
+[THYMELEAF]         * "th:value" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleNonRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:valuetype" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:vspace" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:width" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:with" [600]: org.thymeleaf.standard.processor.attr.StandardWithAttrProcessor
+[THYMELEAF]         * "th:wrap" [1000]: org.thymeleaf.standard.processor.attr.StandardSingleRemovableAttributeModifierAttrProcessor
+[THYMELEAF]         * "th:xmlbase" [1000]: org.thymeleaf.standard.processor.attr.StandardXmlBaseAttrProcessor
+[THYMELEAF]         * "th:xmllang" [1000]: org.thymeleaf.standard.processor.attr.StandardXmlLangAttrProcessor
+[THYMELEAF]         * "th:xmlspace" [1000]: org.thymeleaf.standard.processor.attr.StandardXmlSpaceAttrProcessor
+[THYMELEAF]     * Processors with non-element-specific matching methods [precedence]:
+[THYMELEAF]         * [AbstractTextNode] [100]: org.thymeleaf.standard.processor.text.StandardTextInliningTextProcessor
+[THYMELEAF]     * Execution Attributes:
+[THYMELEAF]         * "StandardExpressionExecutor": Standard Expression Executor with expression evaluator: SpringEL
+[THYMELEAF]         * "EXPRESSION_EVALUATOR": SpringEL
+[THYMELEAF]         * "StandardExpressionParser": Standard Expression Parser
+[THYMELEAF]     * DOCTYPE translations:
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-1.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-spring3-1.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-frameset-thymeleaf-spring3-1.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml11-thymeleaf-spring3-1.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-2.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-spring3-2.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-frameset-thymeleaf-spring3-2.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml11-thymeleaf-spring3-2.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-spring3-3.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-frameset-thymeleaf-spring3-3.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"
+[THYMELEAF]         * DOCTYPE Translation:
+[THYMELEAF]             * Source: SYSTEM "http://www.thymeleaf.org/dtd/xhtml11-thymeleaf-spring3-3.dtd"
+[THYMELEAF]             * Target: PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+[THYMELEAF]     * DOCTYPE resolution entries:
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES Symbols for XHTML//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES Latin 1 for XHTML//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES Special for XHTML//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+[THYMELEAF]         * PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Scripting 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES XHTML Datatypes 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES XHTML Character Entities 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES XHTML Common Attributes 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Presentation 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Inline Structural 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Block Structural 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Images 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Server-side Image Maps 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Ruby 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Client-side Image Maps 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES XHTML 1.1 Document Model 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML BIDI Override Element 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Block Phrasal 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Tables 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Embedded Object 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Inline Presentation 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Block Presentation 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Editing Elements 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Base Element 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES XHTML Qualified Names 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Document Structure 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Param Element 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Lists 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Metainformation 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Style Sheets 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Inline Style 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Inline Phrasal 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Link Element 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES XHTML Modular Framework 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Text 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ENTITIES XHTML Intrinsic Events 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Forms 1.0//EN" "*"
+[THYMELEAF]         * PUBLIC "-//W3C//ELEMENTS XHTML Hypertext 1.0//EN" "*"
+[THYMELEAF]         * SYSTEM "about:legacy-compat"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-1.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-spring3-1.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-frameset-thymeleaf-spring3-1.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml11-thymeleaf-spring3-1.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-2.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-spring3-2.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-frameset-thymeleaf-spring3-2.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml11-thymeleaf-spring3-2.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-spring3-3.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-frameset-thymeleaf-spring3-3.dtd"
+[THYMELEAF]         * SYSTEM "http://www.thymeleaf.org/dtd/xhtml11-thymeleaf-spring3-3.dtd"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2014-07-14 15:46:16 INFO  TemplateEngine:843 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2014-07-14 15:46:16 DEBUG TemplateEngine:1140 - [THYMELEAF][Test worker] STARTING PROCESS OF TEMPLATE "/home" WITH LOCALE en
+2014-07-14 15:46:16 DEBUG TemplateRepository:231 - [THYMELEAF][Test worker] Template "/home" was correctly resolved as resource "/WEB-INF/views//home.html" in mode HTML5 with resource resolver "SERVLETCONTEXT"
+2014-07-14 15:46:16 DEBUG TemplateEngine:1239 - [THYMELEAF][Test worker] Starting process on template "/home" using mode "HTML5"
+2014-07-14 15:46:16 DEBUG EXPRESSION_CACHE:119 - [THYMELEAF][CACHE_INITIALIZE] Initializing cache EXPRESSION_CACHE. Max size: 500. Soft references are used.
+2014-07-14 15:46:16 DEBUG TemplateRepository:231 - [THYMELEAF][Test worker] Template "layout" was correctly resolved as resource "/WEB-INF/views/layout.html" in mode HTML5 with resource resolver "SERVLETCONTEXT"
+2014-07-14 15:46:16 DEBUG TemplateRepository:231 - [THYMELEAF][Test worker] Template "layout" was correctly resolved as resource "/WEB-INF/views/layout.html" in mode HTML5 with resource resolver "SERVLETCONTEXT"
+2014-07-14 15:46:16 DEBUG ResourceBundleThemeSource:109 - Theme created: name 'theme', basename [theme]
+2014-07-14 15:46:16 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'scopedTarget.basket'
+2014-07-14 15:46:16 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'scopedTarget.basket'
+2014-07-14 15:46:16 DEBUG TemplateRepository:231 - [THYMELEAF][Test worker] Template "layout" was correctly resolved as resource "/WEB-INF/views/layout.html" in mode HTML5 with resource resolver "SERVLETCONTEXT"
+2014-07-14 15:46:16 DEBUG TemplateEngine:1248 - [THYMELEAF][Test worker] Finished process on template "/home" using mode "HTML5"
+2014-07-14 15:46:16 DEBUG TemplateEngine:1154 - [THYMELEAF][Test worker] FINISHED PROCESS AND OUTPUT OF TEMPLATE "/home" WITH LOCALE en
+2014-07-14 15:46:16 DEBUG TIMER:1160 - [THYMELEAF][Test worker][/home][en][706167885][706] TEMPLATE "/home" WITH LOCALE en PROCESSED IN 706167885 nanoseconds (approx. 706ms)
+2014-07-14 15:46:16 DEBUG TestDispatcherServlet:966 - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = GET
+         Request URI = /
+          Parameters = {}
+             Headers = {}
+
+             Handler:
+                Type = com.yummynoodlebar.web.controller.SiteController
+              Method = public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = /home
+                View = null
+           Attribute = basket
+2014-07-14 15:46:16 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'scopedTarget.basket'
+2014-07-14 15:46:16 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'scopedTarget.basket'
+               value = com.yummynoodlebar.web.domain.Basket@6f9a49
+              errors = []
+           Attribute = menuItems
+               value = [com.yummynoodlebar.web.domain.MenuItem@102f3f7, com.yummynoodlebar.web.domain.MenuItem@14d761, com.yummynoodlebar.web.domain.MenuItem@9f3b5a]
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 200
+       Error message = null
+             Headers = {Content-Type=[text/html;charset=ISO-8859-1]}
+        Content type = text/html;charset=ISO-8859-1
+                Body = <!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Simplicity Itself" />
+
+    <title>Yummy Noodle Bar</title>
+
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    </link>
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+    </style>
+    <!-- See http://twitter.github.com/bootstrap/scaffolding.html#responsive -->
+    <link href="/resources/css/bootstrap-responsive.min.css" rel="stylesheet">
+    </link>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- {!begin layout} -->
+<div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="/">Yummy Noodle Bar</a>
+                <div class="nav-collapse collapse">
+                    <p class="navbar-text pull-right">
+
+                    </p>
+                    <ul class="nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/showBasket">Basket</a></li>
+                    </ul>
+                </div> <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- {!end layout} -->
+
+<div class="container-fluid">
+    <div>
+    <div class="well sidebar-nav span3">
+        <ul class="nav nav-list">
+            <li class="nav-header">Navigation could go here</li>
+            <li><a href="http://www.gopivotal.com/">Pivotal, Inc</a></li>
+            <li><a href="http://www.springsource.org/spring-xd">Spring XD</a></li>
+            <li><a href="http://spring.io">Spring</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="hero-unit span9">
+        <h3>Yummy</h3>
+
+        <p>
+            Welcome to the home of all things Noodle
+        </p>
+
+        <p>
+            <a class="btn btn-primary btn-large" href="http://spring.io/">Learn more about Spring</a>
+            
+        </p>
+
+    </div>
+
+    <div class="row-fluid">
+        <div class="span9">
+
+            <div id="message" class="alert alert-info">
+                Select from the menu. Currently your basket contains <em>0</em> truly
+                scrumptious item(s).
+            </div>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Mins to prepare</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>YM2</td>
+                    <td>Special Yummy Noodles</td>
+                    <td>2.99</td>
+                    <td>12</td>
+                    <td>
+                        <form action="/addToBasket" method="POST">
+                            <input id="id" name="id" type="hidden" value="YM2" />
+                            <input id="name" name="name" type="hidden" value="Special Yummy Noodles" />
+                            <input id="cost" name="cost" type="hidden" value="2.99" />
+                            <input id="minutesToPrepare" name="minutesToPrepare" type="hidden" value="12" />
+                            <input type="submit" value="Add to basket" />
+                        </form>
+                    </td>
+
+                </tr><tr>
+                    <td>YM3</td>
+                    <td>Low cal Yummy Noodles</td>
+                    <td>3.99</td>
+                    <td>13</td>
+                    <td>
+                        <form action="/addToBasket" method="POST">
+                            <input id="id" name="id" type="hidden" value="YM3" />
+                            <input id="name" name="name" type="hidden" value="Low cal Yummy Noodles" />
+                            <input id="cost" name="cost" type="hidden" value="3.99" />
+                            <input id="minutesToPrepare" name="minutesToPrepare" type="hidden" value="13" />
+                            <input type="submit" value="Add to basket" />
+                        </form>
+                    </td>
+
+                </tr><tr>
+                    <td>YM1</td>
+                    <td>Yummy Noodles</td>
+                    <td>1.99</td>
+                    <td>11</td>
+                    <td>
+                        <form action="/addToBasket" method="POST">
+                            <input id="id" name="id" type="hidden" value="YM1" />
+                            <input id="name" name="name" type="hidden" value="Yummy Noodles" />
+                            <input id="cost" name="cost" type="hidden" value="1.99" />
+                            <input id="minutesToPrepare" name="minutesToPrepare" type="hidden" value="11" />
+                            <input type="submit" value="Add to basket" />
+                        </form>
+                    </td>
+
+                </tr>
+                <!-- This example data will be removed by thmyeleafe during processing and replaced with the rows generated above -->
+                
+                </tbody>
+            </table>
+            <div>
+    <footer>
+        <p>&copy; Yummy Noodle Bar 2013</p>
+    </footer>
+</div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+       Forwarded URL = null
+      Redirected URL = null
+             Cookies = []
+2014-07-14 15:46:17 DEBUG DirtiesContextTestExecutionListener:107 - After test method: context [[TestContext@7e4b2b testClass = WebDomainIntegrationTest, testInstance = com.yummynoodlebar.config.WebDomainIntegrationTest@178f96e, testMethod = getHome@WebDomainIntegrationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]], class dirties context [false], class mode [null], method dirties context [false].
+2014-07-14 15:46:17 DEBUG ServletTestExecutionListener:98 - Resetting RequestContextHolder for test context [TestContext@7e4b2b testClass = WebDomainIntegrationTest, testInstance = com.yummynoodlebar.config.WebDomainIntegrationTest@178f96e, testMethod = getHome@WebDomainIntegrationTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]].
+2014-07-14 15:46:17 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@7e4b2b testClass = WebDomainIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@10810f9 testClass = WebDomainIntegrationTest, locations = '{}', classes = '{class com.yummynoodlebar.config.PersistenceConfig, class com.yummynoodlebar.config.CoreConfig, class com.yummynoodlebar.config.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,156 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.yummynoodlebar.web.controller.SiteIntegrationTest" tests="2" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="dinesh" time="1.405332970117E9">
+  <properties/>
+  <testcase name="rootUrlforwardsCorrectly" classname="com.yummynoodlebar.web.controller.SiteIntegrationTest" time="2.501"/>
+  <testcase name="rootUrlPopulatesViewModel" classname="com.yummynoodlebar.web.controller.SiteIntegrationTest" time="0.508"/>
+  <system-out><![CDATA[2014-07-14 15:46:08 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2014-07-14 15:46:08 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:08 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:08 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-07-14 15:46:08 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)
+2014-07-14 15:46:08 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@982416
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:09 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-07-14 15:46:09 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:482 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@c88d40]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:504 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@b17ecc]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:642 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@fb8996]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:704 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@6047d]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:533 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2014-07-14 15:46:09 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 23 ms
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:823 - DispatcherServlet with name '' processing GET request for [/]
+2014-07-14 15:46:09 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:220 - Looking up handler method for path /
+2014-07-14 15:46:09 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:227 - Returning handler method [public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:912 - Last-Modified value for [/] is: -1
+2014-07-14 15:46:09 DEBUG SiteController:38 - Yummy MenuItemDetails to home view
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/WEB-INF/views/home.html]] in DispatcherServlet with name ''
+2014-07-14 15:46:09 DEBUG InternalResourceView:373 - Added model object 'basket' of type [com.yummynoodlebar.web.domain.Basket$$EnhancerByMockitoWithCGLIB$$295972af] to request in view with name 'null'
+2014-07-14 15:46:09 DEBUG InternalResourceView:373 - Added model object 'menuItems' of type [java.util.ArrayList] to request in view with name 'null'
+2014-07-14 15:46:09 DEBUG InternalResourceView:373 - Added model object 'org.springframework.validation.BindingResult.basket' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'null'
+2014-07-14 15:46:09 DEBUG InternalResourceView:236 - Forwarding to resource [/WEB-INF/views/home.html] in InternalResourceView 'null'
+2014-07-14 15:46:09 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [/WEB-INF/views/home.html]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:966 - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = GET
+         Request URI = /
+          Parameters = {}
+             Headers = {}
+
+             Handler:
+                Type = com.yummynoodlebar.web.controller.SiteController
+              Method = public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = /home
+                View = null
+           Attribute = basket
+               value = basket
+              errors = []
+           Attribute = menuItems
+               value = [com.yummynoodlebar.web.domain.MenuItem@1fbcd1b, com.yummynoodlebar.web.domain.MenuItem@56deff, com.yummynoodlebar.web.domain.MenuItem@14a68c2]
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 200
+       Error message = null
+             Headers = {}
+        Content type = null
+                Body = 
+       Forwarded URL = /WEB-INF/views/home.html
+      Redirected URL = null
+             Cookies = []
+2014-07-14 15:46:09 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2014-07-14 15:46:09 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-07-14 15:46:09 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)
+2014-07-14 15:46:09 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@1b19aaa
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:09 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:09 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-07-14 15:46:09 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:482 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1af4de3]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:504 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@1f58923]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:642 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1f91958]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:704 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@ff654c]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:533 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2014-07-14 15:46:09 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:823 - DispatcherServlet with name '' processing GET request for [/]
+2014-07-14 15:46:09 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:220 - Looking up handler method for path /
+2014-07-14 15:46:09 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:227 - Returning handler method [public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:912 - Last-Modified value for [/] is: -1
+2014-07-14 15:46:09 DEBUG SiteController:38 - Yummy MenuItemDetails to home view
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [/WEB-INF/views/home.html]] in DispatcherServlet with name ''
+2014-07-14 15:46:09 DEBUG InternalResourceView:373 - Added model object 'basket' of type [com.yummynoodlebar.web.domain.Basket$$EnhancerByMockitoWithCGLIB$$295972af] to request in view with name 'null'
+2014-07-14 15:46:09 DEBUG InternalResourceView:373 - Added model object 'menuItems' of type [java.util.ArrayList] to request in view with name 'null'
+2014-07-14 15:46:09 DEBUG InternalResourceView:373 - Added model object 'org.springframework.validation.BindingResult.basket' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'null'
+2014-07-14 15:46:09 DEBUG InternalResourceView:236 - Forwarding to resource [/WEB-INF/views/home.html] in InternalResourceView 'null'
+2014-07-14 15:46:09 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [/WEB-INF/views/home.html]
+2014-07-14 15:46:09 DEBUG TestDispatcherServlet:966 - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = GET
+         Request URI = /
+          Parameters = {}
+             Headers = {}
+
+             Handler:
+                Type = com.yummynoodlebar.web.controller.SiteController
+              Method = public java.lang.String com.yummynoodlebar.web.controller.SiteController.getCurrentMenu(org.springframework.ui.Model)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = /home
+                View = null
+           Attribute = basket
+               value = basket
+              errors = []
+           Attribute = menuItems
+               value = [com.yummynoodlebar.web.domain.MenuItem@1a36091, com.yummynoodlebar.web.domain.MenuItem@11905c5, com.yummynoodlebar.web.domain.MenuItem@1c9fc5d]
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 200
+       Error message = null
+             Headers = {}
+        Content type = null
+                Body = 
+       Forwarded URL = /WEB-INF/views/home.html
+      Redirected URL = null
+             Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

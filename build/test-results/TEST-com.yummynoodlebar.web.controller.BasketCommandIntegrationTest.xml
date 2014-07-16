@@ -1,0 +1,290 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.yummynoodlebar.web.controller.BasketCommandIntegrationTest" tests="4" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="dinesh" time="1.405332970684E9">
+  <properties/>
+  <testcase name="thatAddToBasketRedirects" classname="com.yummynoodlebar.web.controller.BasketCommandIntegrationTest" time="0.325"/>
+  <testcase name="thatRemoveFromBasketCollaborates" classname="com.yummynoodlebar.web.controller.BasketCommandIntegrationTest" time="0.107"/>
+  <testcase name="thatRemoveFromBasketRedirects" classname="com.yummynoodlebar.web.controller.BasketCommandIntegrationTest" time="0.046"/>
+  <testcase name="thatAddToBasketCollaborates" classname="com.yummynoodlebar.web.controller.BasketCommandIntegrationTest" time="0.064"/>
+  <system-out><![CDATA[2014-07-14 15:46:10 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/addToBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/removeFromBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@ae308
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:482 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@45d5e3]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:504 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@1b0e7e3]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:642 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@d77fac]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:704 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@9b3326]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:533 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 4 ms
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:823 - DispatcherServlet with name '' processing POST request for [/addToBasket]
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:220 - Looking up handler method for path /addToBasket
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:227 - Returning handler method [public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)]
+2014-07-14 15:46:10 DEBUG BasketCommandController:33 - Add null from the basket
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.RedirectView: unnamed; URL [/]] in DispatcherServlet with name ''
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:966 - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = POST
+         Request URI = /addToBasket
+          Parameters = {}
+             Headers = {}
+
+             Handler:
+                Type = com.yummynoodlebar.web.controller.BasketCommandController
+              Method = public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = redirect:/
+                View = null
+           Attribute = basket
+               value = basket
+              errors = []
+           Attribute = joe
+               value = com.yummynoodlebar.web.domain.MenuItem@eef9db
+              errors = []
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 302
+       Error message = null
+             Headers = {Location=[/]}
+        Content type = null
+                Body = 
+       Forwarded URL = null
+      Redirected URL = /
+             Cookies = []
+2014-07-14 15:46:10 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/addToBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/removeFromBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@85e6b1
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:482 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1f5c8d2]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:504 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@1535b2d]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:642 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1871111]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:704 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@718f92]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:533 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:823 - DispatcherServlet with name '' processing POST request for [/removeFromBasket/]
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:220 - Looking up handler method for path /removeFromBasket/
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:227 - Returning handler method [public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)]
+2014-07-14 15:46:10 DEBUG BasketCommandController:25 - Remove LOOK_FOR_ME_IN_THE_LOG from the basket
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.RedirectView: unnamed; URL [/showBasket]] in DispatcherServlet with name ''
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:966 - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = POST
+         Request URI = /removeFromBasket/
+          Parameters = {id=[LOOK_FOR_ME_IN_THE_LOG]}
+             Headers = {}
+
+             Handler:
+                Type = com.yummynoodlebar.web.controller.BasketCommandController
+              Method = public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = redirect:/showBasket
+                View = null
+           Attribute = basket
+               value = basket
+              errors = []
+           Attribute = fred
+               value = com.yummynoodlebar.web.domain.MenuItem@ad5a59
+              errors = []
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 302
+       Error message = null
+             Headers = {Location=[/showBasket]}
+        Content type = null
+                Body = 
+       Forwarded URL = null
+      Redirected URL = /showBasket
+             Cookies = []
+2014-07-14 15:46:10 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/addToBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/removeFromBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@947f0a
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:482 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@2cd9f9]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:504 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@38859d]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:642 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a818cf]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:704 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@f4596e]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:533 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 1 ms
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:823 - DispatcherServlet with name '' processing POST request for [/removeFromBasket]
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:220 - Looking up handler method for path /removeFromBasket
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:227 - Returning handler method [public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)]
+2014-07-14 15:46:10 DEBUG BasketCommandController:25 - Remove null from the basket
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.RedirectView: unnamed; URL [/showBasket]] in DispatcherServlet with name ''
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:966 - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = POST
+         Request URI = /removeFromBasket
+          Parameters = {}
+             Headers = {}
+
+             Handler:
+                Type = com.yummynoodlebar.web.controller.BasketCommandController
+              Method = public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = redirect:/showBasket
+                View = null
+           Attribute = basket
+               value = basket
+              errors = []
+           Attribute = fred
+               value = com.yummynoodlebar.web.domain.MenuItem@ceac77
+              errors = []
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 302
+       Error message = null
+             Headers = {Location=[/showBasket]}
+        Content type = null
+                Body = 
+       Forwarded URL = null
+      Redirected URL = /showBasket
+             Cookies = []
+2014-07-14 15:46:10 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/addToBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:179 - Mapped "{[/removeFromBasket],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.remove(com.yummynoodlebar.web.domain.MenuItem)
+2014-07-14 15:46:10 DEBUG RequestMappingHandlerAdapter:618 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@c81c24
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-07-14 15:46:10 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2014-07-14 15:46:10 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:454 - FrameworkServlet '': initialization started
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:467 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:482 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1ebefac]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:504 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@cf0b4]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:642 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a47a37]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:704 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@e14b1f]
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:533 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2014-07-14 15:46:10 INFO  TestDispatcherServlet:473 - FrameworkServlet '': initialization completed in 3 ms
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:823 - DispatcherServlet with name '' processing POST request for [/addToBasket]
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:220 - Looking up handler method for path /addToBasket
+2014-07-14 15:46:10 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:227 - Returning handler method [public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)]
+2014-07-14 15:46:10 DEBUG BasketCommandController:33 - Add null from the basket
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:1206 - Rendering view [org.springframework.web.servlet.view.RedirectView: unnamed; URL [/]] in DispatcherServlet with name ''
+2014-07-14 15:46:10 DEBUG TestDispatcherServlet:966 - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = POST
+         Request URI = /addToBasket
+          Parameters = {}
+             Headers = {}
+
+             Handler:
+                Type = com.yummynoodlebar.web.controller.BasketCommandController
+              Method = public java.lang.String com.yummynoodlebar.web.controller.BasketCommandController.add(com.yummynoodlebar.web.domain.MenuItem)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = redirect:/
+                View = null
+           Attribute = basket
+               value = basket
+              errors = []
+           Attribute = joe
+               value = com.yummynoodlebar.web.domain.MenuItem@137d9b5
+              errors = []
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 302
+       Error message = null
+             Headers = {Location=[/]}
+        Content type = null
+                Body = 
+       Forwarded URL = null
+      Redirected URL = /
+             Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
+	<wb-module deploy-name="tut-web-4-complete">
+		<property name="context-root" value="tut-web-4-complete"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+		<wb-resource deploy-path="/" source-path="src/main/webapp"/>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.springframework/spring-context/3.2.3.RELEASE/jar/12ad5920647556704f79cc579d4e133430741c5/spring-context-3.2.3.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/commons-logging/commons-logging/1.1.1/jar/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.springframework/spring-expression/3.2.3.RELEASE/jar/51e4c94a79892c0a2d15c5efda8c5b336ebf5c37/spring-expression-3.2.3.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.thymeleaf/thymeleaf-spring3/2.0.18/jar/1595570131f809c2eed938f36e09881d5ae9f31c/thymeleaf-spring3-2.0.18.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/ognl/ognl/3.0.6/jar/a3665cf8e3426686ee751790f3d1e1ec5705e9dc/ognl-3.0.6.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.thymeleaf/thymeleaf/2.0.18/jar/32cd6b805e8fb862e85e2f26ebbb310d91694b9a/thymeleaf-2.0.18.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.springframework/spring-web/3.2.3.RELEASE/jar/833c5e9a60f82209a3f669a5026dfa8de57c1df3/spring-web-3.2.3.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.slf4j/slf4j-log4j12/1.7.5/jar/6edffc576ce104ec769d954618764f39f0f0f10d/slf4j-log4j12-1.7.5.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.springframework/spring-webmvc/3.2.3.RELEASE/jar/6d6d1b53c53dbefd0d8c15f2d5c194ced1f8d53c/spring-webmvc-3.2.3.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.springframework/spring-beans/3.2.3.RELEASE/jar/a48eb92ef51e0aed7d23dcaa54225b8f24808db4/spring-beans-3.2.3.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/log4j/log4j/1.2.17/bundle/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/aopalliance/aopalliance/1.0/jar/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.slf4j/slf4j-api/1.7.5/jar/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.javassist/javassist/3.16.1-GA/jar/315891b371395271977af518d4db5cee1a0bc9bf/javassist-3.16.1-GA.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.springframework/spring-aop/3.2.3.RELEASE/jar/a70bec95e45a29cad126d250699d0ed0fedfe28a/spring-aop-3.2.3.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/dinesh/.gradle/caches/artifacts-24/filestore/org.springframework/spring-core/3.2.3.RELEASE/jar/accdd65db57e79e49f2af037bb76f5a55a580f00/spring-core-3.2.3.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+	</wb-module>
+</project-modules>
